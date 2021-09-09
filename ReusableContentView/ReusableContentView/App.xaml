@@ -3,6 +3,48 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ReusableContentView.App">
     <Application.Resources>
+        <ResourceDictionary>
+            <Style x:Key="HeaderLabel" TargetType="Label">
+                <Setter Property="HorizontalOptions" Value="Center"></Setter>
+                <Setter Property="FontAttributes" Value="Bold"></Setter>
+                <Setter Property="FontSize" Value="Large"></Setter>
+                <Setter Property="TextColor" Value="Black"></Setter>
+            </Style>
 
+            <Style x:Key="ImageItem" TargetType="Image">
+                <Setter Property="HeightRequest" Value="50"></Setter>
+            </Style>
+
+            <Style x:Key="TitleLabel" TargetType="Label">
+                <Setter Property="FontSize" Value="Medium"></Setter>
+                <Setter Property="FontAttributes" Value="Bold"></Setter>
+                <Setter Property="HorizontalTextAlignment" Value="Center"></Setter>
+            </Style>
+
+            <Style x:Key="DetailLabel" TargetType="Label">
+                <Setter Property="FontSize" Value="Small"></Setter>
+                <Setter Property="HorizontalTextAlignment" Value="Center"></Setter>
+            </Style>
+
+            <Style x:Key="IconBar" TargetType="Image">
+                <Setter Property="HeightRequest" Value="30"></Setter>
+            </Style>
+
+            <Style x:Key="GridItem" TargetType="Grid">
+                <Setter Property="VerticalOptions" Value="Center"></Setter>
+                <Setter Property="Padding" Value="40"></Setter>
+                <Setter Property="RowSpacing" Value="10"></Setter>
+                <Setter Property="ColumnSpacing" Value="50"></Setter>
+            </Style>
+
+            <Style x:Key="MenuViewStyle" TargetType="ContentView">
+                <Setter Property="BackgroundColor" Value="FloralWhite"></Setter>
+            </Style>
+
+            <Style x:Key="BarViewStyle" TargetType="ContentView">
+                <Setter Property="Margin" Value="-50, 10, -40, -30"></Setter>
+                <Setter Property="VerticalOptions" Value="Center"></Setter>
+            </Style>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

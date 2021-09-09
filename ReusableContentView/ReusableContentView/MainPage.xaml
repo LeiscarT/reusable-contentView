@@ -2,18 +2,17 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ReusableContentView.MainPage"
-             xmlns:views="clr-namespace:ReusableContentView.Views" BackgroundColor="LightGray">
+             xmlns:views="clr-namespace:ReusableContentView.Views" Style="{StaticResource MenuViewStyle}" >
     
-    <Grid RowDefinitions="Auto, Auto, Auto, Auto" ColumnDefinitions="*,*" VerticalOptions="Center" Padding="40" RowSpacing="10" ColumnSpacing="50">
-        <Label Text="Discovery" Grid.ColumnSpan="2" HorizontalOptions="Center" FontAttributes="Bold" FontSize="Large" TextColor="Black"/>
+    <Grid RowDefinitions="Auto, Auto, Auto, Auto" ColumnDefinitions="*,*" Style="{StaticResource GridItem}">
+        <Label Text="Discovery" Grid.ColumnSpan="2"  Style="{StaticResource HeaderLabel}"/>
         <views:MenuView Grid.Column="0" Grid.Row="1" BindingContext="{Binding Item1}"></views:MenuView>
         <views:MenuView Grid.Column="1" Grid.Row="1" BindingContext="{Binding Item2}"></views:MenuView>
         <views:MenuView Grid.Column="0" Grid.Row="2" BindingContext="{Binding Item3}"></views:MenuView>
         <views:MenuView Grid.Column="1" Grid.Row="2" BindingContext="{Binding Item4}"></views:MenuView>
         <views:MenuView Grid.Column="0" Grid.Row="3" BindingContext="{Binding Item5}"></views:MenuView>
         <views:MenuView Grid.Column="1" Grid.Row="3" BindingContext="{Binding Item6}"></views:MenuView>
-        <views:BarView  Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Margin="-50, 10, -40, -30" VerticalOptions="Center"></views:BarView>
-
+        <views:BarView  Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Style="{StaticResource BarViewStyle}"></views:BarView>
     </Grid>
    
  

@@ -6,7 +6,7 @@ using System.Text;
 
 namespace ReusableContentView.ViewModels
 {
-    class MenuViewModel : INotifyPropertyChanged
+    class MenuViewModel
     {
         public Card Item1 { get; }
         public Card Item2 { get; }
@@ -25,6 +25,5 @@ namespace ReusableContentView.ViewModels
             Item6 = new Card("Featured Foods", "favoritefood.png", "12 places");
         }
 
-        public event PropertyChangedEventHandler PropertyChanged;
     }
 }

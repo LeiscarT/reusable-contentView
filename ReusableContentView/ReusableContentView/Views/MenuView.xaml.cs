@@ -10,7 +10,7 @@ using Xamarin.Forms.Xaml;
 namespace ReusableContentView.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class MenuView : StackLayout
+    public partial class MenuView : Frame
     {
         public MenuView()
         {

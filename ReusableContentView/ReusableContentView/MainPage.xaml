@@ -2,16 +2,17 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ReusableContentView.MainPage"
-             xmlns:views="clr-namespace:ReusableContentView.Views">
+             xmlns:views="clr-namespace:ReusableContentView.Views" BackgroundColor="LightGray">
 
-    <Grid RowDefinitions="Auto, Auto, Auto, Auto" ColumnDefinitions="*,*" VerticalOptions="Center" Padding="40" RowSpacing="20" ColumnSpacing="20">
-        <Label Text="Discovery" Grid.ColumnSpan="2" HorizontalOptions="Center" FontAttributes="Bold" FontSize="Large"/>
+    <Grid RowDefinitions="Auto, Auto, Auto, Auto" ColumnDefinitions="*,*" VerticalOptions="Center" Padding="20" RowSpacing="10" ColumnSpacing="50">
+        <Label Text="Discovery" Grid.ColumnSpan="2" HorizontalOptions="Center" FontAttributes="Bold" FontSize="Large" TextColor="Black"/>
         <views:MenuView Grid.Column="0" Grid.Row="1" BindingContext="{Binding Item1}"></views:MenuView>
         <views:MenuView Grid.Column="1" Grid.Row="1" BindingContext="{Binding Item2}"></views:MenuView>
         <views:MenuView Grid.Column="0" Grid.Row="2" BindingContext="{Binding Item3}"></views:MenuView>
         <views:MenuView Grid.Column="1" Grid.Row="2" BindingContext="{Binding Item4}"></views:MenuView>
         <views:MenuView Grid.Column="0" Grid.Row="3" BindingContext="{Binding Item5}"></views:MenuView>
         <views:MenuView Grid.Column="1" Grid.Row="3" BindingContext="{Binding Item6}"></views:MenuView>
+        <views:BarView  Grid.Row="4"></views:BarView>
     </Grid>
 
  

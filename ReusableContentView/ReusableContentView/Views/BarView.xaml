@@ -4,10 +4,10 @@
              x:Class="ReusableContentView.Views.BarView">
 
     <Grid ColumnDefinitions="*,*,*,*,*" RowDefinitions="Auto">
-        <Image Source="beach.png" Grid.Column="0" ></Image>
-        <Image Source="beach.png" Grid.Column="1"></Image>
-        <Image Source="beach.png" Grid.Column="2"></Image>
-        <Image Source="beach.png" Grid.Column="3"></Image>
-        <Image Source="beach.png" Grid.Column="4"></Image>
+        <Image Source="home.png" Grid.Column="0" HeightRequest="30"></Image>
+        <Image Source="location.png" Grid.Column="1" HeightRequest="30"></Image>
+        <Image Source="bookmark.png" Grid.Column="2" HeightRequest="30"></Image>
+        <Image Source="trophy.png" Grid.Column="3" HeightRequest="30"></Image>
+        <Image Source="user.png" Grid.Column="4" HeightRequest="30"></Image>
     </Grid>
 </Frame>

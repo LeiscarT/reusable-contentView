@@ -1,7 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ReusableContentView.MainPage">
+             x:Class="ReusableContentView.MainPage"
+             xmlns:views="clr-namespace:ReusableContentView.Views">
+
+    <Grid RowDefinitions="Auto, Auto, Auto, Auto" ColumnDefinitions="*,*">
+        <Label Text="Discovery" Grid.ColumnSpan="2" VerticalOptions="Center"/>
+        <views:MenuView Grid.Column="0" Grid.Row="1"></views:MenuView>
+        <views:MenuView Grid.Column="1" Grid.Row="1"></views:MenuView>
+        <views:MenuView Grid.Column="0" Grid.Row="2"></views:MenuView>
+        <views:MenuView Grid.Column="1" Grid.Row="2"></views:MenuView>
+        <views:MenuView Grid.Column="0" Grid.Row="3"></views:MenuView>
+        <views:MenuView Grid.Column="1" Grid.Row="3"></views:MenuView>
+    </Grid>
 
    
 
